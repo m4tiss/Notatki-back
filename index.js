@@ -4,6 +4,10 @@ const { port } = require('./config');
 const apiRouter = require('./routes/api');
 
 
+//db
+require('./db/mongoose');
+
+
 // routes
 app.use('/', apiRouter);
 
